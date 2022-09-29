@@ -1,0 +1,105 @@
+
+.title{
+  font-size:60px;
+  padding:20px 0px;
+}
+
+.crow{
+  background-color: #333;
+}
+
+.crow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 700px) {
+  
+ .container{
+  width: 100%;
+}
+  
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.ccard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border-radius:10px;
+  cursor:pointer;
+  margin-left: 7%;
+  width: 40%;
+}
+.ccard .profile{
+   border-radius:10px;
+   transition: 0.2s;
+}
+.ccard:hover .profile{
+  transform:scale(1.1);
+  border-top-right-radius:20px;
+  border-top-left-radius:20px;
+}
+
+.ccard .content{
+  width:100%;
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+.ccard .content .back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color: #f1f1f1e6;
+  transition:1s;
+  
+  z-index:1;
+  padding:10px;
+}
+
+.from-left{
+  top:0;
+  left:-100%;
+}
+.ccard:hover .content .from-left {
+   left:0%;
+}
+
+.from-bottom{
+  top:100%;
+  left:0;
+}
+.ccard:hover .content .from-bottom {
+   top:0%;
+}
+
+.from-right{
+  top:0%;
+  right:-100%;
+}
+.ccard:hover .content .from-right {
+   right:0;
+}
+
+.ccard .content .back h3{
+  font-size:15px;
+  letter-spacing:2px;
+}
+.ccard .content .back .tem-img{
+  border-radius:100%;
+}
+
+
+
+
+
+
